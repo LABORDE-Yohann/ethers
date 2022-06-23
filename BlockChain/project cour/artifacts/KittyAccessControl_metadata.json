@@ -1,0 +1,188 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cfoAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ceoAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newCEO",
+						"type": "address"
+					}
+				],
+				"name": "setCEO",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newCOO",
+						"type": "address"
+					}
+				],
+				"name": "setCOO",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newCFO",
+						"type": "address"
+					}
+				],
+				"name": "setCFO",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cooAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "newContract",
+						"type": "address"
+					}
+				],
+				"name": "ContractUpgrade",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"setCEO(address)": {
+					"params": {
+						"_newCEO": "The address of the new CEO"
+					}
+				},
+				"setCFO(address)": {
+					"params": {
+						"_newCFO": "The address of the new CFO"
+					}
+				},
+				"setCOO(address)": {
+					"params": {
+						"_newCOO": "The address of the new COO"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"pause()": {
+					"notice": "a bug or exploit is detected and we need to limit damage."
+				},
+				"unpause()": {
+					"notice": "derived contracts."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"project/cryptokitties.sol": "KittyAccessControl"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"project/cryptokitties.sol": {
+			"keccak256": "0x9e523647665dd8fcaf378a3d9eb1a3d52a333f4e51a83f7d679514f2f9b2a9a9",
+			"urls": [
+				"bzzr://b52cd98b15348102aa868aad86d101bb237710dce68c4546128ed15f757286f9"
+			]
+		}
+	},
+	"version": 1
+}
